@@ -97,13 +97,13 @@ all gov token holders of the 2i2i DAO are also full participants of the fee coin
 - each user at the of a 2i2i meeting will get 0.5% of the fee collected by 2i2i (which is 10% of the coins sent from Guest to Host) in the form of 2i2i (gov) tokens, but only if an exchange rate is known between the 2i2i token and the fee token.
 is this rule safe? in theory, it should be. fees collected by 2i2i increase the value of the 2i2i token and a part of that is given to the user. it's a positive trade for the treasury.
 
-- each user at the of a 2i2i meeting will also get 0.5*10^-9*1% of all 2i2i tokens. i.e. 1 billion meetings result in 1% 
+- each user at the of a 2i2i meeting will also get 0.5**10^-9**1% of all 2i2i tokens. i.e. 1 billion meetings result in 1% 
 
-- each tag of the @2i2i_app on twitter rewards the user 10^-6\*1% of all 2i2i tokens.
-- each tag of the #2i2i on twitter rewards the user 10^-6*0.5% of all 2i2i tokens.
-- each blog post written with 2i2i mentioned rewards the user 10^-6*2% of all 2i2i tokens.
-- each video post made with 2i2i mentioned rewards the user 10^-6*2.5% of all 2i2i tokens.
-- each mention of 2i2i anywhere rewards the user 10^-6*1% of all 2i2i tokens.
+- each tag of the @2i2i_app on twitter rewards the user 10^-6**1% of all 2i2i tokens.
+- each tag of the #2i2i on twitter rewards the user 10^-6**0.5% of all 2i2i tokens.
+- each blog post written with 2i2i mentioned rewards the user 10^-6**2% of all 2i2i tokens.
+- each video post made with 2i2i mentioned rewards the user 10^-6**2.5% of all 2i2i tokens.
+- each mention of 2i2i anywhere rewards the user 10^-6**1% of all 2i2i tokens.
 these marketing rewards will have to be submitted by the claimer.
 
 these tokenomics have a positive effect on the dynamics of the network.
