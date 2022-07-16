@@ -1,4 +1,4 @@
-# tokenomics and governance of 2i2i - draft version - details could still change
+# tokenomics and governance of 2i2i
 
 2i2i is to be a DAO, governed and owned by the tokens of the DAO. this document is about those tokens.
 
