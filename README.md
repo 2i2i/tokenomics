@@ -103,7 +103,7 @@ is this rule safe? in theory, it should be. fees collected by 2i2i increase the 
 - each tag of the #2i2i on twitter rewards the user 10^-6\*0.5% of all 2i2i tokens.
 - each blog post written with 2i2i mentioned rewards the user 10^-6\*2% of all 2i2i tokens.
 - each video post made with 2i2i mentioned rewards the user 10^-6\*2.5% of all 2i2i tokens.
-- each mention of 2i2i anywhere rewards the user 10^-6\*1% of all 2i2i tokens.
+- each mention of 2i2i anywhere rewards the user 10^-6\*1% of all 2i2i tokens.  
 these marketing rewards will have to be submitted by the claimer.
 
 these tokenomics have a positive effect on the dynamics of the network.
