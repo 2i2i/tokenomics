@@ -11,7 +11,7 @@ we can have our governance completely on-chain, unlike the current governance of
 at first glance, the locking of gov tokens seems restrictive towards the voter. this can be alleviated via the 'receipt' token.
 when a voter locks their coins in the governance contract, they receive 1:1 receipt tokens in exchange. these tokens can be exchanged back to the gov tokens anytime after the voting period has ended.
 
-should the receipt tokens be tradable? i.e. should the voter be economically bound to the gov token after declaring their vote?
+should the receipt tokens be tradable? i.e. should the voter be economically bound to the gov token after declaring their vote but before all the voting ends?
 both options are possible
 
 ### receipt tokens are frozen
@@ -28,7 +28,7 @@ since the vote would be public, in theory, the malicious actor has no inside inf
 
 on the other hand, for normal actors, a tradable receipt token represents freedom. they can vote and immediately use the receipt tokens elsewhere in DeFi instead of losing out. this makes voting a low and fixed cost effort.
 
-rather than requiring accounts to freeze their gov tokens during long periods (e.g. months), we only need locking during the voting periods, which is a more precise solution. each vote is independent.
+rather than requiring accounts to freeze their gov tokens during long periods (e.g. months), we only need non-economic locking during the voting periods, which is a more precise solution. each vote is independent.
 
 ### on-chain voting
 
@@ -39,16 +39,16 @@ if the governance contract confirms the vote result for 'change', the update con
 
 ## optimised tokenomics
 
-since we cannot setup perfect tokenomics from the beginning, we should allow changes to tokenomics.
+since we cannot setup perfect tokenomics from the beginning, we should allow changes to tokenomics.  
 let's treat tokenomics as an optimisation problem. we change parameters of our tokenomics and observe changes to a metric that we want to maximise.
 we use some optimisation algorithm to dictate the next set of tokenomics parameters. and thus we continue until we reach an optimum.
-in my opinion, an algorithm that works very well with multi-dimensional noisy data is the multi-start Nelder-Maed.
+in my opinion, an algorithm that works very well with multi-dimensional noisy data is the multi-start Nelder-Mead.
 
 the parameters that can be changed would e.g. be the percentages of the tokens that are allocated for certain purposes.
 
 changes to the tokenomics are generally controlled by the DAO, i.e. governance, i.e. the DAO token holders themselves, excluding the treasury itself.
 
-the optimisation has to include restrictions, such as to not allow the increase of the team allocation, as the team initially holds the majority voting power and could keep increasing their own share.
+the optimisation has to include restrictions, such as to not allow the increase of the creator allocation, as the creator initially holds the largest voting power and could keep increasing its own share.
 
 the currently proposed metric to optimise is **TVL growth**.
 
@@ -62,7 +62,7 @@ changes are based on recommendations of a multi-dim optimisation.
 none of the tokens can be frozen or clawed back.
 
 50% of the tokens are allocated for strategic actions. this will include giving tokens to the team, strategic partnerships, seed sale, public sales.
-the owner of these 50% is initially the creator. the creator can reduce this % anytime they want, but there do not have power to increase it ever.
+the owner of these 50% is initially the creator. the creator can reduce this % anytime it wants, but it does not have power to increase the % ever.
 
 the other 50% start out in the treasury and are used for the ecosystem. this includes rewarding coins for e.g. using or promoting 2i2i, for staking, for adding value in any way.
 
@@ -84,7 +84,7 @@ the DAO has the power and should follow the recommendations of the multi-dim opt
 
 the treasury itself should ideally be a contract controlled by the DAO. this contract would store all the gov tokens and all fee tokens of the system. the treasury contract would allow any account to trade with it. besides secondary markets on DEXs for the gov token, the treasury contract could serve as the ultimate liquidity provider. this contract could e.g. award coins to helpers based on a vote by the DAO.
 
-a non-50/50 AMM, which is what the smart treasury also contains, is difficult to implement in Algorand in high precision due to the limitation of 64bit values. it is possible in principle using multiple contracts. in a single contract, a 90/10 AMM could e.g. be implemented but not a 9999/1.
+a non-50/50 AMM, which is what the smart treasury also contains, is difficult to implement in Algorand in high precision due to the limitation to 64bit values. it is possible in principle using multiple contracts. in a single contract, a 90/10 AMM could e.g. be implemented but not a 9999/1.
 we could however let the AMM not only calculate output quantities based on the existing number of coins, but add a formula to simulate e.g. a 9999/1 AMM.
 the parameter of the formula would be controlled by the DAO.
 
@@ -99,7 +99,7 @@ is this rule safe? in theory, it should be. fees collected by 2i2i increase the 
 
 - each user at the of a 2i2i meeting will also get 0.5*10^-9*1% of all 2i2i tokens. i.e. 1 billion meetings result in 1% 
 
-- each tag of the @2i2i_app on twitter rewards the user 10^-6*1% of all 2i2i tokens.
+- each tag of the @2i2i_app on twitter rewards the user 10^-6\*1% of all 2i2i tokens.
 - each tag of the #2i2i on twitter rewards the user 10^-6*0.5% of all 2i2i tokens.
 - each blog post written with 2i2i mentioned rewards the user 10^-6*2% of all 2i2i tokens.
 - each video post made with 2i2i mentioned rewards the user 10^-6*2.5% of all 2i2i tokens.
@@ -110,7 +110,7 @@ these tokenomics have a positive effect on the dynamics of the network.
 
 
 ## references
-https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-instead
-https://medium.com/borderless-capital/introduction-to-tokenomics-c7af75c09bfe
-https://github.com/1m1-github/AlgoVesting
-https://algoexplorer.io/asset/662477403
+https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-instead  
+https://medium.com/borderless-capital/introduction-to-tokenomics-c7af75c09bfe  
+https://github.com/1m1-github/AlgoVesting  
+https://algoexplorer.io/asset/662477403  
