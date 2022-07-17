@@ -85,8 +85,6 @@ the DAO has the power and should follow the recommendations of the multi-dim opt
 the treasury itself should ideally be a contract controlled by the DAO. this contract would store all the gov tokens and all fee tokens of the system. the treasury contract would allow any account to trade with it. besides secondary markets on DEXs for the gov token, the treasury contract could serve as the ultimate liquidity provider. this contract could e.g. award coins to helpers based on a vote by the DAO.
 
 a non-50/50 AMM, which is what the smart treasury also contains, is difficult to implement in Algorand in high precision due to the limitation to 64bit values. it is possible in principle using multiple contracts. in a single contract, a 90/10 AMM could e.g. be implemented but not a 9999/1.
-we could however let the AMM not only calculate output quantities based on the existing number of coins, but add a formula to simulate e.g. a 9999/1 AMM.
-the parameter of the formula would be controlled by the DAO.
 
 this smart treasury also automatically includes a buyback system. as fee coins accumulate in the treasury, arbitrageurs will buy 2i2i tokens in the secondary markets to sell them to the treasury contract. thereby increasing the tokens' price on the DEXs.
 
