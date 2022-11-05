@@ -92,11 +92,13 @@ all gov token holders of the 2i2i DAO are also full participants of the fee coin
 
 ### initial parameters of tokenomics
 
+amendment*: the below plan still seems plausible ~ since the total supply of coins is very large (2^64-1), handing out even 1 billionth of 1% is ca. 90 million coins ~ instead let's start by giving everyone 1 2i2i coin for everything ~ coin holders could always decide to burn a certain # of coins reducing supply
+
 - each user at the of a 2i2i meeting will get 0.5% of the fee collected by 2i2i (which is 10% of the coins sent from Guest to Host) in the form of 2i2i (gov) tokens, but only if an exchange rate is known between the 2i2i token and the fee token.
 is this rule safe? in theory, it should be. fees collected by 2i2i increase the value of the 2i2i token and a part of that is given to the user. it's a positive trade for the treasury.
 
-- each user at the of a 2i2i meeting will also get 0.5\*10^-9\*1% of all 2i2i tokens. i.e. 1 billion meetings result in 1% 
-
+the following is changed due to the amendment* above ~ we still maintain the idea of reaching this kind of numbers, but start by giving each user/tagger/etc. of 2i2i with 1 2i2i coin ~ at some point, we can burn some # of coins and then proceed to the tuning the below numbers:
+- each user at the of a 2i2i meeting will also get 0.5\*10^-9\*1% of all 2i2i tokens. i.e. 1 billion meetings result in 1%.
 - each tag of the @2i2i_app on twitter rewards the user 10^-6\*1% of all 2i2i tokens.
 - each tag of the #2i2i on twitter rewards the user 10^-6\*0.5% of all 2i2i tokens.
 - each blog post written with 2i2i mentioned rewards the user 10^-6\*2% of all 2i2i tokens.
